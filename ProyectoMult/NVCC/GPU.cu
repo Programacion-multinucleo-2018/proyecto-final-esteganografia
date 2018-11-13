@@ -183,8 +183,8 @@ void menu(cv::Mat input)
 {
 	printf("¿Que deseas hacer?\n 1. Codificar un mensaje\n 2. Decodificar un mensaje\n");
 
-	string op = "1";
-	//getline(cin,op);
+	string op;
+	getline(cin,op);
  
 	if(op == "1")
 	{
@@ -195,8 +195,8 @@ void menu(cv::Mat input)
 		printf("¿de que archivo desea obtener el mensaje?\n");
 
 		string file,msg = "";
-		//getline(cin,file);
-		string line = "file.txt";
+		getline(cin,file);
+		string line;
 		ifstream infile(file);
 		
 		
@@ -259,3 +259,4 @@ int main(int argc, char *argv[])
 
 	return 0;
 }
+
